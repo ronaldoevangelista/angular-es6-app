@@ -8,6 +8,7 @@
     <meta name="description" content="">
 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
@@ -23,7 +24,7 @@
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
-
+    <script src="bower_components/material-design-lite/material.min.js"></script>
     <script>
         traceur.options.experimental = true;
         new traceur.WebPageTranscoder(document.location.href).run();
@@ -38,6 +39,42 @@
                     <button class="mdl-button mdl-js-button mdl-button--icon">
                             <i class="material-icons md-24">description</i>
                     </button>
+
+                    <button id="more-vert-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">folder</i>
+                    </button>
+
+                    <button class="mdl-button mdl-js-button mdl-button--icon" id="show-dialog">
+                        <i class=" material-icons ">build</i>
+                    </button>
+
+                    <button class="mdl-button mdl-js-button mdl-button--icon ">
+                         <i class="material-icons ">help outline</i>
+                    </button>
+
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect " for="more-vert-menu-lower-right">
+                        <li class="mdl-menu__item mdl-list__item ">
+                            <a href="#/addMission">
+                                <span class="mdl-list__item-primary-content ">
+                          <i id="show-dialog " class="material-icons mdl-list__item-icon " >description</i>
+                          Nova</a>
+                    </span>
+                        </li>
+
+                        <li class="mdl-menu__item mdl-list__item ">
+                            <span class="mdl-list__item-primary-content ">
+                          <i class="material-icons mdl-list__item-icon ">unarchive</i>
+                          Exportar
+                    </span>
+                        </li>
+                        <li class="mdl-menu__item mdl-list__item ">
+                            <span class="mdl-list__item-primary-content ">
+                          <i class="material-icons mdl-list__item-icon ">inbox</i>
+                          Importar
+                    </span>
+                        </li>
+                    </ul>
+
                     <md-button>
                         Right Bar Button
                     </md-button>

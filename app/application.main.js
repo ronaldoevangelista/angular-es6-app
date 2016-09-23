@@ -11,6 +11,11 @@ function config($routeProvider) {
             controller: 'application.homeController',
             controllerAs: 'vm'
         })
+        .when('/addMission', {
+            templateUrl: 'templates/addMission.html',
+            controller: 'application.addmissionController',
+            controllerAs: 'vm'
+        })
         .otherwise({ redirectTo: '/' });
     console.log("find..");
 }
