@@ -11,9 +11,9 @@ function config($routeProvider) {
             controller: 'application.homeController',
             controllerAs: 'vm'
         })
-        .when('/addMission', {
-            templateUrl: 'templates/addMission.html',
-            controller: 'application.addmissionController',
+        .when('/mission', {
+            templateUrl: 'templates/mission.html',
+            controller: 'application.missionController',
             controllerAs: 'vm'
         })
         .otherwise({ redirectTo: '/' });
