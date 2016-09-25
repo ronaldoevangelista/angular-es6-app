@@ -5,6 +5,12 @@ const TIMEOUT = new WeakMap();
 const people = [
     { name: 'Janet Perkins', img: 'img/100-0.jpeg', newMessage: true },
     { name: 'Mary Johnson', img: 'img/100-1.jpeg', newMessage: false },
+    { name: 'Kay Johnson', img: 'img/100-2.jpeg', newMessage: false },
+    { name: 'Dany Johnson', img: 'img/100-0.jpeg', newMessage: false },
+    { name: 'Tery Johnson', img: 'img/100-1.jpeg', newMessage: false },
+    { name: 'San Johnson', img: 'img/100-0.jpeg', newMessage: false },
+    { name: 'Tes Johnson', img: 'img/100-1.jpeg', newMessage: false },
+    { name: 'Fary Johnson', img: 'img/100-1.jpeg', newMessage: false },
     { name: 'Peter Carlsson', img: 'img/100-2.jpeg', newMessage: false }
 ];
 
