@@ -26,6 +26,7 @@ var app = angular.module(moduleName, ['ngRoute', 'ngMessages', 'ngMaterial', ser
         $mdIconProvider
             .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
             .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24)
+            .iconSet('navigation', 'img/icons/sets/navigation-symbol.svg', 24)
             .defaultIconSet('img/icons/sets/core-icons.svg', 24);
     }).config(config);
 export default moduleName;
