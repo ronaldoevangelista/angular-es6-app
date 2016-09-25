@@ -3,8 +3,14 @@ var moduleName = 'application.services';
 const HTTP = new WeakMap();
 
 class ApplicationService {
+
     constructor($http) {
         HTTP.set(this, $http);
+    }
+
+    getActiveBooks() {
+        console.log('getActiveBooks');
+        return HTTP.get(this).get('/api/getall').then(result => result.data);
     }
 
     static applicationFactory($http) {

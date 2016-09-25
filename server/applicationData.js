@@ -1,22 +1,17 @@
-var missions = [{
-    face: imagePath,
-    what: 'Brunch this weekend?',
-    name: 'Min Li Chan',
-    time: '3:08PM',
-    notes: " I'll be in your neighborhood doing errands"
+var books = [{
+    bookId: 1,
+    title: "Harry Porter and Philosopher's Stone",
+    author: "JK Rowling",
+    read: false,
+    archived: false
 }, {
-    face: imagePath,
-    what: 'Brunch this weekend?',
-    name: 'Samanta Santos',
-    time: '3:08PM',
-    notes: " I'll be in your neighborhood doing errands"
-}, {
-    face: imagePath,
-    what: 'Brunch this weekend?',
-    name: 'Mina de carajas',
-    time: '3:08PM',
-    notes: " I'll be in your neighborhood doing errands"
+    bookId: 2,
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    read: false,
+    archived: false
 }];
+
 module.exports = {
-    missions: missions
+    books: books
 };
