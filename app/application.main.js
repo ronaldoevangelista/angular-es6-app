@@ -17,7 +17,6 @@ function config($routeProvider) {
             controllerAs: 'vm'
         })
         .otherwise({ redirectTo: '/' });
-    console.log("find..");
 }
 
 config.$inject = ['$routeProvider'];

@@ -1,16 +1,47 @@
+var imagePath = 'img/list/60.jpeg';
+
+
 var books = [{
-    bookId: 1,
-    title: "Harry Porter and Philosopher's Stone",
-    author: "JK Rowling",
-    read: false,
-    archived: false
-}, {
-    bookId: 2,
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    read: false,
-    archived: false
-}];
+        face: imagePath,
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands",
+        archived: false
+    },
+    {
+        face: imagePath,
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands",
+        archived: false
+    },
+    {
+        face: imagePath,
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands",
+        archived: false
+    },
+    {
+        face: imagePath,
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands",
+        archived: false
+    },
+    {
+        face: imagePath,
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands",
+        archived: false
+    },
+];
 
 module.exports = {
     books: books
