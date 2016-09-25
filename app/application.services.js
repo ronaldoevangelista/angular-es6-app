@@ -9,7 +9,6 @@ class ApplicationService {
     }
 
     getActiveBooks() {
-        console.log('getActiveBooks');
         return HTTP.get(this).get('/api/getall').then(result => result.data);
     }
 
