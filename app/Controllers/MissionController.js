@@ -33,6 +33,19 @@ class MissionController {
             .targetEvent(event)
         );
     }
+
+
+    doSecondaryAction(event) {
+        this.mdDialog.show(
+            this.mdDialog.alert()
+            .title('Secondary Action')
+            .textContent('Secondary actions can be used for one click actions')
+            .ariaLabel('Secondary click demo')
+            .ok('Neat!')
+            .targetEvent(event)
+        );
+    };
+
 }
 
 MissionController.$inject = ['$timeout', 'applicationService', '$mdDialog'];
