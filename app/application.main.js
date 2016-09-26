@@ -16,6 +16,11 @@ function config($routeProvider) {
             controller: 'application.missionController',
             controllerAs: 'vm'
         })
+        .when('/missionform', {
+            templateUrl: 'templates/missionform.html',
+            controller: 'application.missionController',
+            controllerAs: 'vm'
+        })
         .otherwise({ redirectTo: '/' });
 }
 
