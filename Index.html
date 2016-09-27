@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" type="text/css" href="potree/css/potree.css">
+
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,6 +30,16 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/material-design-lite/material.min.js"></script>
+
+
+    <script src="potree/js/libs/three.js"></script>
+    <script src="potree/js/libs/stats.min.js"></script>
+    <script src="potree/js/libs/dat.gui.min.js"></script>
+    <script src="potree/js/libs/BinaryHeap.js"></script>
+
+    <script src="potree/js/libs/potree.js"></script>
+    <script src="potree/js/ProgressBar.js"></script>
+
     <script>
         traceur.options.experimental = true;
         new traceur.WebPageTranscoder(document.location.href).run();
@@ -49,7 +61,8 @@
                     </button>
 
                     <button class="mdl-button mdl-js-button mdl-button--icon" id="show-dialog">
-                        <i class=" material-icons ">build</i>
+                    <a href="#/lion">
+                        <i class=" material-icons ">build</i></a>
                     </button>
 
                     <button class="mdl-button mdl-js-button mdl-button--icon ">
@@ -90,9 +103,8 @@
 
 
 
-
-
     <script type="module" src="app/bootstrap.js"></script>
+
 </body>
 
 </html>

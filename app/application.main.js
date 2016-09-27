@@ -21,6 +21,11 @@ function config($routeProvider) {
             controller: 'application.missionController',
             controllerAs: 'vm'
         })
+        .when('/lion', {
+            templateUrl: 'templates/lion.html',
+            controller: 'application.cloudpointController',
+            controllerAs: 'vm'
+        })
         .otherwise({ redirectTo: '/' });
 }
 
@@ -34,4 +39,5 @@ var app = angular.module(moduleName, ['ngRoute', 'ngMessages', 'ngMaterial', ser
             .iconSet('navigation', 'img/icons/sets/navigation-symbol.svg', 24)
             .defaultIconSet('img/icons/sets/core-icons.svg', 24);
     }).config(config);
+
 export default moduleName;
